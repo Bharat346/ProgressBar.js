@@ -33,13 +33,13 @@ example :
    ```html
    <div id = "user_given_id"></div>
 
-4. Horizontal ProgressBar :
+4. **Horizontal ProgressBar :**
     use :
      ```js
      ProgressBarByFA("user_given_id",data,labels,icons); // By icons
      ProgressBarByIMG("user_given_id",data,labels,src); // By images
 
-5. Circular ProgressBar :
+5. **Circular ProgressBar :**
     use : 
     ```js
     circularProgressBar(
