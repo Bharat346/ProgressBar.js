@@ -1,0 +1,61 @@
+#container{
+    width:50vw;
+    height:max-content;
+}
+
+/* Styles for the progress bar */
+.CDNTOPROGRESS progress {
+    width: 40vw;
+    height:8px;
+    appearance: none;
+    border-radius:50px;
+    animation: Length 1s ease-in;
+}
+
+/* Styles for the progress value */
+.CDNTOPROGRESS progress::-webkit-progress-value {
+    background:linear-gradient(to right, rgb(114, 5, 248),rgb(12, 108, 218),rgb(0, 204, 255),rgb(0, 255, 174),rgba(0, 255, 17, 0.781));
+    border-radius:20px;
+}
+
+/* Styles for the progress bar itself */
+.CDNTOPROGRESS progress::-webkit-progress-bar {
+    background-color: #ccc; /* Change only the color of the progress bar */
+    border-radius:50px;
+}
+
+
+.label-CDN{
+    display:flex;
+    justify-content:flex-start;
+    gap:10px;
+    font-size:25px;
+}
+
+@keyframes Length {
+    0%{
+        width:5vw;
+    }
+
+    100%{
+        width:40vw;
+    }
+}
+
+#CPBcanvas{
+    width:100px;
+    background-color: #ebf1f1ec;
+    border-radius:100px;
+}
+
+.CIRCULARBAR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1px;
+    flex-direction: column;
+}
+
+.CIRCULARBAR p{
+    font-size:20px;
+}
