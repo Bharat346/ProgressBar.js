@@ -104,16 +104,6 @@ function animateProgress(
   requestAnimationFrame(step);
 }
 
-const canvas = document.querySelectorAll(".progressCanvas");
-const data = [30, 40, 15, 91, 23, 38];
-const labels = ["C", "Html", "CSS", "JavaScript", "TypeScript", "Python"];
-const icons = [
-  "fas fa-c",
-  "fab fa-html5",
-  "fab fa-css3",
-  "fab fa-html5",
-  "fa-brands fa-js",
-];
 const circularProgressBar = (
   containerID,
   canvases,
