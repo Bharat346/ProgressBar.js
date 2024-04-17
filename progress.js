@@ -157,7 +157,3 @@ const circularProgressBar = (
   }
 };
 
-setTimeout(() => {
-    ProgressBarByFA("container",data,labels,icons);
-}, 500);
-
