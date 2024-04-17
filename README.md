@@ -8,7 +8,7 @@ ProgressBar.js is a lightweight JavaScript library for creating customizable Hor
    Add the following script tag to your HTML file to include the PieChart.js library:
    
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/Bharat346/ProgressBar.js/progressBar.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/Bharat346/ProgressBar.js/progressBar346.js"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bharat346/ProgressBar.js/progress.css">
 
 
@@ -53,6 +53,21 @@ example :
     );
 
 6. For styles You can watch out which classes i used in this code from scratch.
+
+## Suggestion
+use the function with "DomContentloaded" or SetTimeout for smooth working.
+
+1. With AddEventListner
+    ```js
+    document.getElementById("user_given_id").addEventListener('DOMContentLoaded',() => {
+           // Function - call
+    })
+
+2. with SetTimeout
+   ```js
+   setTimeout(() => {
+      // Function - call
+   },delay) // delay should be anything ( Ex. - 500 , 800 ,1000)
 
 ## License
 
