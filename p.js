@@ -1,8 +1,3 @@
-// const canvas = document.querySelectorAll(".progressCanvas")
-// const data = [30, 40 , 15 , 91];
-// const labels = ["C", "Html", "CSS", "JavaScript"];
-// const icons = ["fas fa-c", "fab fa-html5", "fab fa-css3", "fab fa-html5", "fa-brands fa-js"];
-
 const ProgressBarByFA = (containerID, data, labels, icons) => {
   let container = document.getElementById(containerID);
   container.style.display = "flex";
@@ -23,12 +18,12 @@ const ProgressBarByFA = (containerID, data, labels, icons) => {
   }
 };
 
-const ProgressBarByIMG = (container, data, labels, icons) => {
+const ProgressBarByIMG = (container, data, labels, src) => {
   for (let i = 0; i < data.length; i++) {
     let NewDiv = document.createElement("div");
     NewDiv.innerHTML = `
             <div class="CDNTOPROGRESS">
-                <div class="label-CDN"><img src="${icons[i]}"></img>${labels[i]}</div>
+                <div class="label-CDN"><img src="${src[i]}"></img>${labels[i]}</div>
                 <progress value="${data[i]}" max="100"></progress>
             </div>
         `;
@@ -103,10 +98,8 @@ function animateProgress(
 
   requestAnimationFrame(step);
 }
-
 const circularProgressBar = (
   containerID,
-  canvases,
   data,
   labels,
   duration = 1000,
@@ -116,8 +109,15 @@ const circularProgressBar = (
   radius = 80,
   InnerFontSize = 30
 ) => {
+  // Check if the container element exists
+  let cont = document.getElementById(containerID);
+  if (!cont) {
+    console.error(`Container element not found with ID: ${containerID}`);
+    return; // Exit the function early
+  }
+
+  // Proceed with the rest of the function
   for (let i = 0; i < data.length; i++) {
-    let cont = document.getElementById(containerID);
     let PROGRessDIV = document.createElement("div");
     PROGRessDIV.classList.add("CIRCULARBAR");
     PROGRessDIV.innerHTML = `
@@ -146,4 +146,3 @@ const circularProgressBar = (
     CIRCULARBAR.appendChild(p);
   }
 };
-
