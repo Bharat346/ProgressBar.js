@@ -8,7 +8,7 @@ ProgressBar.js is a lightweight JavaScript library for creating customizable Hor
    Add the following script tag to your HTML file to include the PieChart.js library:
    
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/Bharat346/ProgressBar.js/Progress.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/Bharat346/ProgressBar.js/ProgressBar.js"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Bharat346/ProgressBar.js/progress.css">
 
 
