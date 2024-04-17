@@ -52,6 +52,8 @@ example :
        InnerFontSize = 30
     );
 
+6. For styles You can watch out which classes i used in this code from scratch.
+
 ## License
 
 PieChart.js is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
