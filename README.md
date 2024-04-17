@@ -29,4 +29,35 @@ example :
 
 
 
+3. Basic Html structure : 
+   ```html
+   <div id = "user_given_id"></div>
+
+4. Horizontal ProgressBar :
+    use :
+     ```js
+     ProgressBarByFA("user_given_id",data,labels,icons); // By icons
+     ProgressBarByIMG("user_given_id",data,labels,src); // By images
+
+5. Circular ProgressBar :
+    use : 
+    ```js
+    circularProgressBar(
+      "user_given_id",
+       data,
+       labels,
+       duration = 1000,
+       lineWidth = 5,
+       BgarcClr = "#e0e0e0",
+       ProgressarcClr = "#7711e4",
+       radius = 80,
+       InnerFontSize = 30
+    );
+
+## License
+
+PieChart.js is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+
  
